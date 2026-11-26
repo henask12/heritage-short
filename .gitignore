@@ -1,0 +1,31 @@
+# Secrets (never commit)
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python / Node build artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+node_modules/
+web/node_modules/
+web/.next/
+web/out/
+
+# Large generated caches & intermediates
+outputs/cache/
+outputs/shots/
+outputs/narration/
+outputs/music/
+*.tmp
+
+# Keep graded deliverables tracked: radio cut, finals, keyframes, subtitles
+# (keyframes are committed so clean clones can Ken Burns without regenerating)
+
+# OS files
+.DS_Store
+Thumbs.db

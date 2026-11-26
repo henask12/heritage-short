@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "title": "Red Through the Years",
+    "slug": "red-through-the-years",
+    "logline": "A boy in Ethiopia falls for Manchester United — the Red Devils — and carries that loyalty through wins, droughts, and adulthood until the club's present day.",
+    "audience": "Anyone who understands lifelong loyalty: friends, family, football fans, and non-fans scrolling on phone or desktop feeds.",
+    "intent": "Leave the viewer feeling that supporting Manchester United can be family heritage—a Red Devils thread of patience, identity, and belonging across years.",
+    "primary_language": "en",
+    "secondary_languages": [
+      "am"
+    ],
+    "target_duration_sec": {
+      "min": 60,
+      "max": 90
+    },
+    "aspect_ratios": [
+      "16:9",
+      "9:16"
+    ],
+    "fps": 24
+  },
+  "style": {
+    "visual_direction": "Intimate 35mm poetic documentary realism set primarily in Addis Ababa, Ethiopia, anchored by Manchester United Red Devils kits, scarves, and crest motifs bridging warm tungsten interiors, rain-streaked glass, and golden-hour highland light.",
+    "color_palette": [
+      "Manchester United crimson (#DA291C)",
+      "warm Addis tungsten amber (#D99A4E)",
+      "slate rain indigo (#2A3447)",
+      "cream woven cotton (#EAE2D3)",
+      "deep charcoal shadow (#141316)"
+    ],
+    "lighting": "Soft natural window light, golden-hour highland warmth, and warm practical tungsten lamps contrasted with cool evening rain and screen glow during the lean years.",
+    "lens_and_texture": "35mm and 50mm anamorphic prime lenses, shallow depth of field, subtle Kodak Portra 400 film grain, tactile fabric and wood textures, natural skin tones.",
+    "prompt_suffix": "cinematic 35mm documentary still, natural film grain, Kodak Portra color science, clear Manchester United Red Devils jersey and scarf details, atmospheric depth of field, respectful authentic Ethiopian home details, no text overlays, no watermarks, no living football players, fictional random Ethiopian face not based on any real person",
+    "negative_prompt": "recognizable living football players, celebrity faces, Henok likeness, real personal photo identity, broadcast TV logos, plastic CGI skin, oversaturated neon, cartoon, anime, watermark, subtitles, distorted hands, extra fingers, Eiffel Tower, Paris",
+    "likeness_guardrails": [
+      "Never depict recognizable living or historical footballer faces; convey eras through Manchester United kits, Red Devils crest motifs, scarves, floodlights, and anonymous crowds.",
+      "Do not use assets/refs/henok-adult.jpg or any real personal likeness; protagonists are fictional synthetic characters.",
+      "Show clear Manchester United / Red Devils identity on shirts and scarves — not generic unlabeled red fabric alone."
+    ]
+  },
+  "characters": {
+    "fan_adult": {
+      "display_name": "United Fan (Adult)",
+      "role": "Fictional protagonist and narrator, present day",
+      "age_range": "late 20s to early 30s",
+      "consent_status": "synthetic_anonymous",
+      "reference_image": null,
+      "physical_description": "Fictional random Ethiopian adult man in his late 20s to early 30s: warm medium-brown skin, short natural black hair, light neat stubble, dark brown eyes, athletic-slim build, warm open expression. Not based on any real person.",
+      "wardrobe_anchor": "Official-style Manchester United home jersey (bright club crimson with white trim, Red Devils crest on chest, white shorts optional) or a Manchester United supporter t-shirt with clear club crest, plus a black-and-crimson Red Devils knit scarf.",
+      "consistency_notes": "Keep the same fictional adult face across shots 06, 08, and 09. Always show identifiable Manchester United / Red Devils kit or crest — never a blank red shirt."
+    },
+    "fan_child": {
+      "display_name": "United Fan (Child)",
+      "role": "Fictional protagonist in childhood flashbacks",
+      "age_range": "8 to 10 years old",
+      "consent_status": "synthetic_anonymous",
+      "reference_image": null,
+      "physical_description": "Fictional random Ethiopian boy aged 8 to 10: warm medium-brown skin, dark expressive brown eyes, close-cropped black hair, gentle curious smile. Not based on any real child.",
+      "wardrobe_anchor": "Slightly oversized Manchester United home jersey with clear Red Devils crest and white collar/cuff trim (no living player name on back), plus a soft Red Devils knit scarf.",
+      "consistency_notes": "Keep childhood face consistent in shots 01–02; jersey must read as Manchester United / Red Devils, not generic red."
+    }
+  },
+  "audio": {
+    "narration": {
+      "provider": "gemini-tts",
+      "model": "gemini-2.5-flash-preview-tts",
+      "voice_name": "Charon",
+      "voice_type": "stock_prebuilt",
+      "style_prompt": "Speak in a warm, reflective documentary narrator voice with quiet emotional sincerity. Keep a steady natural pace with brief pauses only at sentence ends.",
+      "sample_rate_hz": 24000
+    },
+    "music": {
+      "provider": "ace-step",
+      "model": "ace-step-1.5",
+      "global_prompt": "Original soft wordless terrace-anthem score inspired by football loyalty (NOT any copyrighted Man United theme melody). Warm hymn-like choir pads, gentle major progressions, distant soft pulse, quiet piano chimes; nostalgic and proud but soft under narration; no vocals, ~66 BPM feel, G-major family resolving to hope.",
+      "key_signature": "G major family",
+      "bpm": 66,
+      "placeholder_mode": "warm_ambient_pad"
+    },
+    "mix": {
+      "target_lufs": -14.0,
+      "true_peak_dbtp": -1.0,
+      "music_base_gain_db": -12.0,
+      "music_ducked_gain_db": -20.0
+    }
+  },
+  "subtitles": {
+    "burned_in": true,
+    "language": "en",
+    "font_name": "Inter",
+    "font_size": 22
+  },
+  "end_card": {
+    "shot_id": "shot_10",
+    "title": "Red Through the Years",
+    "credit": "A Heritage Short about Manchester United loyalty",
+    "ai_disclosure": "AI-assisted short film: narration via Gemini TTS, keyframes + Ken Burns motion, score via local ambient bed, assembled in FFmpeg. Characters are fictional.",
+    "consent_notice": "No real personal likeness is used. No living footballer faces are depicted. Manchester United / Red Devils appear as story wardrobe and atmosphere."
+  },
+  "shots": [
+    {
+      "id": "shot_01",
+      "order": 1,
+      "beat_title": "The First Red Devils Shirt",
+      "era": "Childhood — Addis Ababa, late 2000s",
+      "shot_type": "narrative",
+      "duration_sec": 8.0,
+      "characters": [
+        "fan_child"
+      ],
+      "camera": {
+        "framing": "Medium shot, eye-level with child",
+        "movement": "Slow gentle push-in toward the oversized Manchester United jersey"
+      },
+      "image_prompt": "An 8-year-old fictional Ethiopian boy with warm medium-brown skin, dark curious eyes, and close-cropped black hair standing in a modest sunlit-dusk Addis Ababa bedroom with lace curtains. He proudly holds up a slightly oversized Manchester United home jersey — bright club crimson with white trim and a clear Red Devils crest on the chest — smiling with quiet wonder. A small vintage CRT television glows softly behind him. Not based on any real person.",
+      "motion_prompt": "Slow intimate push-in as dusk dust motes drift through warm window light; the boy gently lifts the oversized Manchester United Red Devils jersey toward his chest while soft green light flickers from the vintage television.",
+      "narration": {
+        "en": "Before I knew the streets of Manchester, I knew the Red Devils — a United shirt hanging too wide on my shoulders in Addis.",
+        "am": "የማንቸስተርን ጎዳናዎች ከማውቅ በፊት ሬድ ዴቪልስን አውቅ ነበር — በአዲስ አበባ ትከሻዬ ላይ በጣም ሰፊ የሆነ የዩናይትድ ሸሚዝ።"
+      },
+      "music_cue": {
+        "id": "solo_warm_pad_intro",
+        "mood": "Nostalgic, tender wonder",
+        "instrumentation": "Soft felt piano notes over a hushed warm ambient drone",
+        "intensity": 0.25
+      },
+      "reason": "Grounds fans and non-fans in Addis Ababa and names Manchester United / Red Devils immediately via the first kit, not generic red.",
+      "seed": 20101,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_02",
+      "order": 2,
+      "beat_title": "Match Night Living Room",
+      "era": "Childhood — Family & Neighbors",
+      "shot_type": "narrative",
+      "duration_sec": 8.0,
+      "characters": [
+        "fan_child"
+      ],
+      "camera": {
+        "framing": "Medium-wide warm interior",
+        "movement": "Subtle handheld warmth drifting gently across the room"
+      },
+      "image_prompt": "Cozy Ethiopian family living room at night in warm tungsten lamplight. A fictional 8-year-old Ethiopian boy wears an oversized Manchester United Red Devils home jersey with clear crest, sitting cross-legged on a woven rug facing a glowing television. Blurred cousins and friends wear black-and-crimson United scarves and celebrate. Clay jebena coffee pot on a low table. No real-person likeness.",
+      "motion_prompt": "Gentle camera drift past steaming coffee cups toward the boy in the Manchester United jersey as warm silhouettes lean forward and celebrate together.",
+      "narration": {
+        "en": "Match nights turned a quiet room into Old Trafford. Strangers became cousins, and ninety minutes felt bigger than the week.",
+        "am": "የጨዋታ ምሽቶች ጸጥ ያለ ክፍልን ወደ ኦልድ ትራፎርድ ቀይረውታል። እንግዶች ወንድሞች ሆኑ፣ ዘጠና ደቂቃ ከሳምንቱ ይበልጥ ትልቅ ይሰማ ነበር።"
+      },
+      "music_cue": {
+        "id": "gentle_pulse_enter",
+        "mood": "Communal warmth and belonging",
+        "instrumentation": "Felt piano joined by subtle warm acoustic pulse and soft brushed percussion",
+        "intensity": 0.45
+      },
+      "reason": "Shows United fandom as family ritual while keeping the Red Devils kit readable in the frame.",
+      "seed": 20202,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_03",
+      "order": 3,
+      "beat_title": "Floodlights and Certainty",
+      "era": "Glory Era — Pure Atmosphere",
+      "shot_type": "narrative",
+      "duration_sec": 7.0,
+      "characters": [],
+      "camera": {
+        "framing": "Atmospheric close-up to shallow bokeh background",
+        "movement": "Slow poetic upward tilt through rain-lit floodlight mist"
+      },
+      "image_prompt": "Close-up of a black-and-crimson Manchester United supporter scarf with Red Devils crest embroidery held high in misty night rain. Behind it, out-of-focus stadium floodlights flare over a blurred sea of United red stands. No recognizable player faces. Pure kit texture, rain, and golden light.",
+      "motion_prompt": "Fine evening rain sparkles through warm floodlight beams as the Manchester United Red Devils scarf ripples in the wind above a soft bokeh sea of club crimson.",
+      "narration": {
+        "en": "Back then, being a Red Devil meant certainty. Rain under bright floodlights, late winners, the feeling that belief was always repaid.",
+        "am": "በዚያን ጊዜ ሬድ ዴቪል መሆን ማለት እርግጠኝነት ማለት ነበር። በብሩህ ስታዲየም መብራቶች ሥር ዝናብ፣ ዘግይተው የሚመጡ ድሎች፣ እምነት ሁልጊዜ የሚከፈልበት ስሜት።"
+      },
+      "music_cue": {
+        "id": "swelling_strings_glory",
+        "mood": "Euphoric memory, cinematic swell",
+        "instrumentation": "Warm legato strings swelling over piano with distant atmospheric stadium air",
+        "intensity": 0.75
+      },
+      "reason": "Names Red Devils glory through kit atmosphere without living player faces.",
+      "seed": 20303,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_04",
+      "order": 4,
+      "beat_title": "Seasons Turning",
+      "era": "Adolescence — Passing Time",
+      "shot_type": "narrative",
+      "duration_sec": 7.0,
+      "characters": [],
+      "camera": {
+        "framing": "Still-life medium close-up by window",
+        "movement": "Slow lateral pan across desk objects toward rain on glass"
+      },
+      "image_prompt": "Quiet dusk in an Addis Ababa study as rain beads on glass. On a timber desk: university notebooks, amber brass lamp, a neatly folded faded Manchester United home jersey with visible Red Devils crest, and a black-and-crimson United scarf on the chair. Reflective still life, no people.",
+      "motion_prompt": "Raindrops trickle down the dusk window while the camera glides across notebooks and the faded Manchester United jersey in soft amber light.",
+      "narration": {
+        "en": "Years passed faster than seasons. Books piled higher, United posters faded, and the easy wins stopped coming home.",
+        "am": "ዓመታት ከወቅቶች በበለጠ ፍጥነት አለፉ። መጻሕፍት ከፍ ብለው ተከማቹ፣ የዩናይትድ ፖስተሮች ደበዘዙ፣ ቀላል ድሎች ወደ ቤት መምጣት አቆሙ።"
+      },
+      "music_cue": {
+        "id": "strings_recede_piano",
+        "mood": "Wistful transition, growing up",
+        "instrumentation": "Strings pull back leaving sparse contemplative felt piano",
+        "intensity": 0.4
+      },
+      "reason": "Marks growing up with a worn United kit as heirloom object, still clearly Red Devils.",
+      "seed": 20404,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_05",
+      "order": 5,
+      "beat_title": "The Quiet Drought Years",
+      "era": "Lean Years — Patient Loyalty",
+      "shot_type": "narrative",
+      "duration_sec": 8.0,
+      "characters": [],
+      "camera": {
+        "framing": "Quiet moody tabletop medium shot",
+        "movement": "Very slow contemplative zoom-out"
+      },
+      "image_prompt": "Late-night apartment desk in cool laptop glow and rain-window streetlight. Beside the laptop: a tea mug and a coiled black-and-crimson Manchester United Red Devils scarf with crest detail on dark wood. Contemplative still life, no faces.",
+      "motion_prompt": "Cool screen light breathes across the coiled United scarf and tea mug as rain shadows slide down the window.",
+      "narration": {
+        "en": "A decade of rebuilds teaches a quieter kind of love. You stop watching for trophies. You watch because you are a Red Devil.",
+        "am": "የአሥር ዓመት እንደገና ግንባታ ጸጥ ያለ የፍቅር ዓይነት ያስተምራል። ዋንጫዎችን መጠባበቅ ትቻለህ። ሬድ ዴቪል ስለሆንክ ትመለከታለህ።"
+      },
+      "music_cue": {
+        "id": "sparse_minor_piano",
+        "mood": "Quiet resilience, bittersweet stillness",
+        "instrumentation": "Low solo cello sustain beneath minimal minor-key piano chords",
+        "intensity": 0.3
+      },
+      "reason": "States drought-year loyalty in Red Devils identity language for fans and non-fans.",
+      "seed": 20505,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_06",
+      "order": 6,
+      "beat_title": "Same Ritual, Sharper Screen",
+      "era": "Present Day — Adult Fan",
+      "shot_type": "narrative",
+      "duration_sec": 8.0,
+      "characters": [
+        "fan_adult"
+      ],
+      "camera": {
+        "framing": "Medium shot, natural eye-level",
+        "movement": "Gentle dolly-in as he pulls on the United jersey"
+      },
+      "image_prompt": "Fictional Ethiopian adult man in his late 20s to early 30s — warm medium-brown skin, short natural black hair, light neat stubble, dark brown eyes — pulling on a modern Manchester United home jersey with clear Red Devils crest in a warm-lit Addis Ababa living room at dusk. Black-and-crimson United scarf nearby. Not based on any real person. No Paris landmarks.",
+      "motion_prompt": "Slow push-in as the adult fan settles into his Manchester United Red Devils jersey and turns toward the match screen with a quiet smile.",
+      "narration": {
+        "en": "Now I'm older, the screen is sharper, and kickoff still finds me in the United shirt — still a Red Devil before the whistle.",
+        "am": "አሁን አድጌአለሁ፣ ማያ ገጹ ይበልጥ ግልጽ ነው፣ የጨዋታ መጀመሪያ ግን አሁንም በዩናይትድ ሸሚዝ ያገኘኛል — ከፉጨት በፊት አሁንም ሬድ ዴቪል ነኝ።"
+      },
+      "music_cue": {
+        "id": "warm_cello_return",
+        "mood": "Grounded continuity, quiet confidence",
+        "instrumentation": "Warm cello melody returns over steady heartbeat-like muted pulse",
+        "intensity": 0.55
+      },
+      "reason": "Adult ritual rhymes with childhood kit moment using clear Manchester United identity, fictional face only.",
+      "seed": 20606,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_07",
+      "order": 7,
+      "beat_title": "What We Inherit",
+      "era": "Continuity — Heritage Motif",
+      "shot_type": "narrative",
+      "duration_sec": 7.0,
+      "characters": [
+        "fan_adult"
+      ],
+      "camera": {
+        "framing": "Overhead / high-angle tactile close-up",
+        "movement": "Slow gentle pull-back revealing both kits in golden light"
+      },
+      "image_prompt": "Tactile close-up of a man's hands placing a faded childhood Manchester United jersey with Red Devils crest beside a crisp newer Manchester United home jersey on a sunlit oak table in Addis Ababa. Golden late-afternoon light across the crests and fabric. No face shown.",
+      "motion_prompt": "Golden light shifts across wool and jersey crest textures as hands smooth the old United shirt beside the new one.",
+      "narration": {
+        "en": "People inherit recipes, songs, and surnames. Some of us inherit the Red Devils — and a promise never to walk away.",
+        "am": "ሰዎች የምግብ አሰራሮችን፣ ዘፈኖችን እና የቤተሰብ ስሞችን ይወርሳሉ። ከእኛ መካከል አንዳንዶቻችን ሬድ ዴቪልስን እንወርሳለን — እና ፈጽሞ የማንለቅ ቃል ኪዳን።"
+      },
+      "music_cue": {
+        "id": "rising_hope_chords",
+        "mood": "Emotional lift, heirloom warmth",
+        "instrumentation": "Piano and strings pivot from D minor toward warm D major harmonies",
+        "intensity": 0.7
+      },
+      "reason": "Heritage thesis delivered through old and new United kits, not generic red cloth.",
+      "seed": 20707,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_08",
+      "order": 8,
+      "beat_title": "Addis Golden Hour, Next Chapter",
+      "era": "Present Day — Hope Renewed",
+      "shot_type": "narrative",
+      "duration_sec": 8.0,
+      "characters": [
+        "fan_adult"
+      ],
+      "camera": {
+        "framing": "Cinematic medium-wide portrait against skyline",
+        "movement": "Slow sweeping arc from profile toward three-quarter view"
+      },
+      "image_prompt": "Fictional Ethiopian adult man wearing a Manchester United home jersey with clear Red Devils crest and a black-and-crimson United scarf, standing on a balcony overlooking Addis Ababa rooftops and highland hills at golden hour. Short natural black hair, light stubble, hopeful expression. Absolutely no Eiffel Tower or Paris. Not based on any real person.",
+      "motion_prompt": "Gentle breeze lifts the United scarf as golden sunset light washes across Addis Ababa and the fan looks forward with quiet pride.",
+      "narration": {
+        "en": "United is still rebuilding, still writing its next chapter. And somehow, every new season still feels like home.",
+        "am": "ዩናይትድ አሁንም እየተገነባ ነው፣ ቀጣዩን ምዕራፍ እየጻፈ ነው። እንደምንም፣ እያንዳንዱ አዲስ ወቅት አሁንም እንደ ቤት ይሰማል።"
+      },
+      "music_cue": {
+        "id": "full_cinematic_lift",
+        "mood": "Hopeful, expansive, proud",
+        "instrumentation": "Full warm strings, resonant cello, subtle warm brass swell over piano",
+        "intensity": 0.85
+      },
+      "reason": "Connects club present to Addis life with unmistakable Red Devils wardrobe.",
+      "seed": 20808,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_09",
+      "order": 9,
+      "beat_title": "We Stayed",
+      "era": "Closing — Timeless Loyalty",
+      "shot_type": "narrative",
+      "duration_sec": 7.0,
+      "characters": [
+        "fan_adult"
+      ],
+      "camera": {
+        "framing": "Intimate medium close-up portrait",
+        "movement": "Very slow hold with micro push-in before fade to crimson-black"
+      },
+      "image_prompt": "Intimate cinematic medium close-up of a fictional Ethiopian adult man in a Manchester United home jersey with visible Red Devils crest, calm knowing half-smile, soft golden-amber evening indoor bokeh in Addis Ababa. Short natural black hair, light stubble. No Paris landmarks. Not based on any real person.",
+      "motion_prompt": "Subtle breathing and a warm smile as the camera holds on his face in the United jersey before a slow fade to deep club crimson.",
+      "narration": {
+        "en": "Players come and go. Eras turn over. What makes a Red Devil's heritage is simple: we stayed.",
+        "am": "ተጫዋቾች ይመጣሉ ይሄዳሉ። ዘመናት ይቀያየራሉ። የሬድ ዴቪል ቅርስ የሚያደርገው ቀላል ነው፦ እኛ ቆይተናል።"
+      },
+      "music_cue": {
+        "id": "warm_resolving_chord",
+        "mood": "Serene, resolved, lingering resonance",
+        "instrumentation": "Orchestra softens to a single warm lingering D-major piano and cello chord",
+        "intensity": 0.45
+      },
+      "reason": "Closes on Red Devils identity and loyalty without using any real personal likeness.",
+      "seed": 20909,
+      "motion_strategy": "ken_burns"
+    },
+    {
+      "id": "shot_10",
+      "order": 10,
+      "beat_title": "AI Provenance End Card",
+      "era": "Credits & Disclosure",
+      "shot_type": "end_card",
+      "duration_sec": 6.0,
+      "characters": [],
+      "camera": {
+        "framing": "Static typographic title card",
+        "movement": "Clean fade-in from crimson-black, hold, fade-out"
+      },
+      "image_prompt": "Minimalist matte Manchester United crimson-charcoal background with subtle 35mm film grain and a thin gold horizontal rule, clean canvas for end-card typography.",
+      "motion_prompt": "Static clean typographic card with gentle fade-in and fade-out over lingering musical chord decay.",
+      "narration": {
+        "en": "",
+        "am": ""
+      },
+      "music_cue": {
+        "id": "fade_to_silence",
+        "mood": "Peaceful tail decay",
+        "instrumentation": "Warm D-major resonance fading smoothly to silence",
+        "intensity": 0.1
+      },
+      "reason": "AI provenance and no-personal-likeness disclosure after the final Red Devils line.",
+      "seed": 21010,
+      "motion_strategy": "static_card"
+    }
+  ]
+}

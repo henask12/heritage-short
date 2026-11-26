@@ -1,0 +1,5 @@
+# Optional dependencies — pipeline works with Python 3.10+ stdlib + FFmpeg alone,
+# and automatically uses jsonschema/Pillow/python-dotenv when installed.
+jsonschema>=4.23.0
+python-dotenv>=1.0.0
+Pillow>=10.4.0
